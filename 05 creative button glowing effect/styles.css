@@ -14,6 +14,7 @@ a {
   padding: 40px 80px;
   transition: all 0.3s;
   position: relative;
+  overflow: hidden;
 }
 
 a:hover {
@@ -29,4 +30,9 @@ a::before {
   height: 50px;
   position: absolute;
   transform: translateX(-100%) rotate(45deg);
+  transition: all 0.3s;
+}
+
+a:hover::before {
+  transform: translateX(100%) rotate(45deg);
 }
