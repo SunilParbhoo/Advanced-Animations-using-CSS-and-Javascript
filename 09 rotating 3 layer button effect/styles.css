@@ -30,9 +30,17 @@ a::before {
   display: flex;
   justify-content: center;
   align-items: center;
+  transform: rotateX(270deg);
+  transform-origin: top;
+  transition: all 0.5s;
 }
 
-/* a::after {
+a:hover::before,
+a:hover::after {
+  transform: rotateX(0deg);
+}
+
+a::after {
   content: "button";
   position: absolute;
   top: 0;
@@ -43,4 +51,8 @@ a::before {
   display: flex;
   justify-content: center;
   align-items: center;
-} */
+  transform: rotateX(270deg);
+  transform-origin: bottom;
+  transition: all 0.5s;
+  transition-delay: 0.25s;
+}
