@@ -5,5 +5,16 @@ body {
   justify-content: center;
   align-items: center;
   font-family: sans-serif;
-  background-color: #grey;
+  background-color: grey;
+}
+
+a {
+  padding: 20px 40px;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 4px;
+  color: #ff0;
+  border: 3px solid #ff0;
+  font-size: 30px;
+  position: relative;
 }
