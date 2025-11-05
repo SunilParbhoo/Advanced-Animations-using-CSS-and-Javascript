@@ -7,3 +7,17 @@ body {
   font-family: verdana;
   background-color: #272727;
 }
+
+a {
+  width: 220px;
+  height: 80px;
+  color: #ff0;
+  background-color: transparent;
+  font-size: 26px;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 80px;
+  transition: all 0.5s;
+  position: relative;
+}
