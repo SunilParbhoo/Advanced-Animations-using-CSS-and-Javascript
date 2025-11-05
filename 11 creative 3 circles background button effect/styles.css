@@ -37,8 +37,22 @@ a::after {
 
 a::before {
   left: 0;
+  box-shadow: -100px 0 0 #ff0;
 }
 
 a::after {
   right: 0;
+  box-shadow: 100px 0 0 #ff0;
+}
+
+a:hover::before {
+  left: 50%;
+  box-shadow: 30px 0 0 #ff0;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+a:hover::after {
+  right: 50%;
+  box-shadow: -30px 0 0 #ff0;
+  transform: translateX(50%) translateY(-50%);
 }
