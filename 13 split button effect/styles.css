@@ -18,10 +18,13 @@ a {
   border: 3px solid #f6b93b;
   transition: all 0.5s;
   position: relative;
+  overflow: hidden;
 }
 
 a::before,
-a::after {
+a::after,
+span::before,
+span::after {
   content: "";
   position: absolute;
   width: 25%;
@@ -49,4 +52,28 @@ a::after {
 a:hover::after {
   top: 0;
   left: 25%;
+}
+
+a span::before {
+  top: 100%;
+  right: 25%;
+}
+
+a:hover span::before {
+  top: 0;
+  right: 25%;
+}
+
+a span::after {
+  top: 0;
+  right: -25%;
+}
+
+a:hover span::after {
+  top: 0;
+  right: 0;
+}
+
+a:hover {
+  color: #222;
 }
