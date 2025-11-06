@@ -31,12 +31,15 @@ span::after {
   height: 100%;
   background-color: #f6b93b;
   z-index: -1;
-  transition: all 0.5s;
+  /* transition: all 0.5s; */
+  transition: all 0.2s;
 }
 
 a::before {
-  top: 0;
-  left: -25%;
+  /* top: 0;
+  left: -25%; */
+  top: 100%;
+  left: 0;
 }
 
 a:hover::before {
@@ -47,6 +50,7 @@ a:hover::before {
 a::after {
   top: -100%;
   left: 25%;
+  transition-delay: 0.1s;
 }
 
 a:hover::after {
@@ -57,6 +61,7 @@ a:hover::after {
 a span::before {
   top: 100%;
   right: 25%;
+  transition-delay: 0.2s;
 }
 
 a:hover span::before {
@@ -65,8 +70,11 @@ a:hover span::before {
 }
 
 a span::after {
-  top: 0;
-  right: -25%;
+  /* top: 0;
+  right: -25%; */
+  top: -100%;
+  right: 0;
+  transition-delay: 0.3s;
 }
 
 a:hover span::after {
