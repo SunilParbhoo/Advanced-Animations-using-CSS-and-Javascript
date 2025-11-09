@@ -6,3 +6,15 @@ body {
   align-items: center;
   background-color: #272727;
 }
+
+button {
+  border: none;
+  padding: 12px 40px;
+  background-color: #c47135;
+  color: white;
+  font-family: "BenchNine";
+  font-size: 22px;
+  text-transform: uppercase;
+  cursor: pointer;
+  position: relative;
+}
