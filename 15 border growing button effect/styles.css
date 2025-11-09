@@ -18,3 +18,20 @@ button {
   cursor: pointer;
   position: relative;
 }
+
+button::before {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: -5px;
+  left: -5px;
+  border-top: 2px solid #c47135;
+  border-left: 2px solid #c47135;
+  transition: all 0.25s;
+}
+
+button:hover::before {
+  height: 100%;
+  width: 100%;
+}
