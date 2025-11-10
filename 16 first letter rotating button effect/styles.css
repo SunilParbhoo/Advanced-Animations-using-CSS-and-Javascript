@@ -6,3 +6,16 @@ body {
   font-family: sans-serif;
   overflow: hidden;
 }
+
+a {
+  text-decoration: none;
+  width: 160px;
+  height: 60px;
+  color: black;
+  border: 2px solid black;
+  text-align: center;
+  line-height: 60px;
+  font-size: 25px;
+  position: relative;
+  transition: all 0.2s;
+}
