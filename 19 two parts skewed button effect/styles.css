@@ -19,3 +19,22 @@ a {
   font-size: 28px;
   color: white;
 }
+
+a:before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 50%;
+  left: -1%;
+  top: -5px;
+  background-color: #ee5253;
+  transform: skewX(30deg);
+  z-index: -1;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+a:hover::before {
+  transform: skewX(0deg);
+  left: 50%;
+  top: 0;
+}
